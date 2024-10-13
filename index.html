@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Blend Mode Practice</title>
+    <link rel="stylesheet" type="text/css" href="main.css" />
+    <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
+  </head>
+  <body>
+    <div id="app">
+      <div class="container">
+        <div id="box1" :style="[box1Style,boxBlendMode]" class="box">
+          <p class="hourDigits">
+            {{ hours }}
+          </p>
+          <p class="minuteDigits">
+            {{ minutes }}
+          </p>
+        </div>
+        <div id="box2" class="box">
+        </div>
+      </div>
+      <select v-model="blendMode">
+        <option value="normal">None</option>
+        <option value="screen">Screen</option>
+        <option value="multiply">Multiply</option>
+        <option value="color-dodge">Color Dodge</option>
+        <option value="darken">Darken</option>
+        <option value="lighten">Lighten</option>
+      </select>
+    </div>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,42 @@
+body {
+  font-size: 22px;
+}
+
+input[type="text"] {
+  margin: 10px 0;
+  display: block;
+}
+
+[v-cloak] {
+  display: none;
+}
+
+.container {
+  background-color: white;
+  padding: 20px;
+}
+
+.box {
+  padding: 4px;
+}
+
+#box1 {
+  position: absolute;
+  width: 160px;
+  background-color: purple;
+}
+
+#box2 {
+  height: 200px;
+  width: 160px;
+  background-color: yellow;
+}
+
+.hourDigits, .minuteDigits {
+  font-size: 100px;
+  line-height: 60px;
+}
+
+.minuteDigits {
+  text-align: right;
+}
